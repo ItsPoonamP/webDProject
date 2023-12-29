@@ -1,0 +1,303 @@
+body
+{
+    font-family: monospace;
+   background-color: black;
+   
+}
+
+.image img
+{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    position: absolute;
+    top: 140px;
+    left: 50px;
+    box-shadow: 0px 0px 0px 20px  white;
+
+}
+
+
+h1{
+    position: absolute;
+    left: 450px;
+    top: 160px;
+    width: 800px;
+    font-size: 90px;
+    color:gainsboro;
+    background-color: darkcyan;
+    box-shadow: 15px 15px 8px 0px cyan;
+    animation: fadeInText 2s ease forwards 3s;
+}
+
+.list1 ul li{
+    display: inline-block;
+    list-style: none;
+margin: 10px 50px;
+color: gainsboro;
+    
+}
+.list1 ul li a{
+    text-decoration: none;
+    color: gainsboro;
+    font-size: 20px;
+    z-index: 10;
+  
+    
+}
+.list1 ul li a:hover{
+   
+    color: red;
+    transition: 0.5s;
+
+}
+.list1
+{
+    
+   border-bottom-style: solid;
+   border-color: gainsboro;
+text-align: center;
+background-color: darkcyan;
+
+}
+span
+{
+    color: red;
+   
+}
+.home
+{
+   
+    background-repeat: no-repeat;
+    background-size:cover ;
+     padding-bottom: 600px;
+     border-style: solid;
+     border-color: aliceblue;
+    animation: transitionIn 1s ;
+}
+#home
+{
+    transition: transform 0.45s cubic-bezier(0, 0, 0.20, 1);
+    animation: animate 1s ease-in forwards 2s;
+}
+.about
+{
+    
+    border-style: solid;
+     border-color: aliceblue;
+    
+}
+.heading
+{
+    font-size: 90px;
+    color: white;
+    text-align: center;
+    padding-bottom: 40px;
+    border-style: double;
+
+   background-color: darkcyan;
+    
+
+    
+}
+#about
+{
+    transition: transform 0.45s cubic-bezier(0, 0, 0.20, 1);
+background-color: black;}
+.about-content
+{
+    position: relative;
+    top: 40px;
+    font-size: 40px;
+    color: gainsboro;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: gainsboro;
+    font-size: 30px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: gainsboro;
+
+}
+.nav ul li a:hover{
+   
+    color: red;
+    transition: 0.5s;
+
+}
+.nav
+{
+    
+
+text-align: center;
+}
+.nav ul li{
+    display: inline-block;
+    list-style: none;
+margin: 10px 70px;
+color: gainsboro;
+}
+.personal-info ul li{
+    
+    color: gainsboro;
+    font-size: 20px;
+    position: relative;
+    left: 450px;
+    top: 0px;
+  
+}
+.service-list
+{
+   color: gainsboro;
+  
+   position: relative;
+left: 350px;
+top: -20px;
+
+  padding-left: 50px;
+}
+.img-text
+{
+    display: flex;
+    flex-direction: column;
+}
+.img-text img{
+    height: 100px;
+    width: 100px;
+}
+.skill
+{
+    display: flex;
+}
+.skill i{
+    position: relative;
+    left: 40px;
+    top: 110px;
+    padding-right: 70px;
+    font-size: 30px;
+}
+.img-text
+{
+    color: white;
+    font-size: 40px;
+    padding-top: 50px;
+    text-align: center;
+}
+#service
+{
+    border-style: solid;
+    border-color: gainsboro;
+    transition: transform 0.45s cubic-bezier(0, 0, 0.20, 1);
+    background-color: black;
+
+}
+.cont
+{
+    color: wheat;
+    font-size: 40px;
+    text-align: center;
+}
+.work-list a
+{
+    display: flex;
+    text-decoration: none;
+position: relative;
+left: 550px;
+    color: beige;
+    font-size: 40px;
+    padding-top: 60px;
+}
+.work-list a:hover{
+color: red;
+transition: 0.5s;
+}
+#work
+{
+    border-style: solid;
+    border-color: gainsboro;
+    background-color: black;
+    transition: transform 0.45s cubic-bezier(0, 0, 0.20, 1);
+}
+#contact a{
+   position: relative;
+   left: 400px;
+   top: 50px;
+    font-size: 50px;
+    padding-right: 180px;
+   color: aliceblue;
+    text-align: center;
+    background-color: black;
+  
+}
+#contact
+{
+    transition: transform 0.45s cubic-bezier(0, 0, 0.20, 1);
+    background-color: black;
+   
+}
+.cont-list
+{
+    background-color: black;
+}
+@keyframes transitionIn
+{
+   from {
+opacity: 0;
+
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+a[id="home"]:target~#home {
+    transform: translate3d(0, 0, 0);
+  }
+  a[id="about"]:target~#about {
+    transform: translate3d(0, -85%, 0);
+  }
+  a[id="service"]:target~#service {
+    transform: translate3d(0, -112%, 0);
+  }
+  a[id="work"]:target~#work {
+    transform: translate3d(0, -460%, 0);
+  }
+  a[id="contact"]:target~#contact {
+    transform: translate3d(0, -1400%, 0);
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(-50%);
+    }
+  }
+  
+  @keyframes fadeInText {
+    from {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @keyframes animate {
+    0% {
+      transform: scale(0, 0.005);
+    }
+    50% {
+      transform: scaleY(0.005);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
